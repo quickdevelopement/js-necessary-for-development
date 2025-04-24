@@ -10,3 +10,6 @@
 - [x] Part-8 Assignments Operator
 - [x] Part-9 Comperision Operator
 - [x] Part-10 String and Logical Operator
+- [x] Part-11 Bitwaise Operator
+- [x] Part-12 Ternary Operator
+- [x] Part-13 Data Type
