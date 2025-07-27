@@ -8,9 +8,12 @@ let person= {
     }
 };
 
-// let name = person.name;
-let name = person["name"];
-console.log(name);
-person.greet();
-person["greet"]();
 
+// console.log(person.name);
+console.log(person['name']);
+
+// console.log(person.job);
+// console.log(person['job']);
+
+person.greet();
+person['greet']();

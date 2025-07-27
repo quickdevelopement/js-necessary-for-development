@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events</title>
+  </head>
+  <body>
+    <h1>JavaScript Events</h1>
+
+    <button onclick="handleClick()">Click Me!</button>
+
+    <input type="text" onchange="handleChange()" id="inputChange" />
+
+    <p onmousedown="handleMouse(event)">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt
+      rerum architecto libero laborum neque eos nostrum, animi, voluptate,
+      praesentium hic minima esse inventore. Ipsa dolor perferendis, cumque
+      blanditiis fuga tenetur hic sequi voluptatibus modi architecto,
+      repellendus repellat delectus est! Facere velit tenetur mollitia animi
+      neque eos repellat atque quaerat?
+    </p>
+
+    <button onkeypress="handleKeyPress(event)">Submit</button>
+
+    <script>
+      function handleClick() {
+        alert("click Me");
+      }
+
+      function handleChange() {
+        var input = document.getElementById("inputChange").value;
+
+        alert("write text = " + input);
+      }
+
+      function handleMouse(event) {
+        var x = event.clientX;
+        var y = event.clientY;
+
+        console.log("position of mouse " + x + "," + y);
+      }
+
+      function handleKeyPress(event) {
+        if (event.key === "Enter") {
+          alert("Enter Press!");
+        }
+      }
+
+      window.onload = () => {
+        alert("window loaded");
+      };
+    </script>
+  </body>
+</html>
